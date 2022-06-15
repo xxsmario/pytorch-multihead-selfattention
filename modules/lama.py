@@ -9,4 +9,4 @@ from torch.nn.parameter import Parameter
 
 class LAMA(Module):
     """
-    This
+    This class implements the low rank factorization multi-head self-atten
