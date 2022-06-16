@@ -10,4 +10,5 @@ from torch.nn.parameter import Parameter
 class LAMA(Module):
     """
     This class implements the low rank factorization multi-head self-attention mechanism described
-    in `"Low Rank Factorization for
+    in `"Low Rank Factorization for Compact Multi-Head Self-Attention"
+    <https://arxiv.org/abs
