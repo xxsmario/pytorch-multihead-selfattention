@@ -17,4 +17,8 @@ class LAMA(Module):
 
     - inputs: shape ``(batch_size, max_sequence_length, input_dim)``
     - mask: shape ``(batch_size, max_sequence_length)``, should be 0 at timesteps where attention will be masked
-        (e.g. pad tokens), and 1 o
+        (e.g. pad tokens), and 1 otherwise.
+
+    Output:
+
+    - attention: shape ``(batch_size, num
