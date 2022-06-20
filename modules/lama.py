@@ -21,4 +21,7 @@ class LAMA(Module):
 
     Output:
 
-    - attention: shape ``(batch_size, num
+    - attention: shape ``(batch_size, num_heads, max_sequence_length)``.
+
+    Parameters
+    ---------
