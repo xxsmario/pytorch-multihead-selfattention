@@ -24,4 +24,6 @@ class LAMA(Module):
     - attention: shape ``(batch_size, num_heads, max_sequence_length)``.
 
     Parameters
-    ---------
+    ----------
+    num_heads : ``int``, required.
+        The number of attention heads 
