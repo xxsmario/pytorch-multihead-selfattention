@@ -26,4 +26,6 @@ class LAMA(Module):
     Parameters
     ----------
     num_heads : ``int``, required.
-        The number of attention heads 
+        The number of attention heads to use.
+    input_dim : ``int``, required.
+        The s
