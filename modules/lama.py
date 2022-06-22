@@ -28,4 +28,5 @@ class LAMA(Module):
     num_heads : ``int``, required.
         The number of attention heads to use.
     input_dim : ``int``, required.
-        The s
+        The size of the last dimension of the input tensor.
+    activation : ``Ca
