@@ -29,4 +29,5 @@ class LAMA(Module):
         The number of attention heads to use.
     input_dim : ``int``, required.
         The size of the last dimension of the input tensor.
-    activation : ``Ca
+    activation : ``Callable``, optional (default=``torch.tanh``)
+        An activation f
