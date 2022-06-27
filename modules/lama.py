@@ -32,3 +32,5 @@ class LAMA(Module):
     activation : ``Callable``, optional (default=``torch.tanh``)
         An activation function applied after the attention calculation. Default is
         ``torch.tanh``. Set to ``None`` to use linear activation (i.e. no activation).
+    normalize : ``bool``, optional (default: ``True``)
+        If tru
