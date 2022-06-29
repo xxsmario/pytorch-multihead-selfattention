@@ -33,4 +33,5 @@ class LAMA(Module):
         An activation function applied after the attention calculation. Default is
         ``torch.tanh``. Set to ``None`` to use linear activation (i.e. no activation).
     normalize : ``bool``, optional (default: ``True``)
-        If true, we normalize the computed similarities with a softmax, to return a prob
+        If true, we normalize the computed similarities with a softmax, to return a probability distribution for
+        each attention head. If false, this
