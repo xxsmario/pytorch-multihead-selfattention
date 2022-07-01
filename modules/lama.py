@@ -34,4 +34,5 @@ class LAMA(Module):
         ``torch.tanh``. Set to ``None`` to use linear activation (i.e. no activation).
     normalize : ``bool``, optional (default: ``True``)
         If true, we normalize the computed similarities with a softmax, to return a probability distribution for
-        each attention head. If false, this
+        each attention head. If false, this is just computing a similarity score. Ignored if `output_dim` is not
+  
