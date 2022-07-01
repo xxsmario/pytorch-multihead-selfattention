@@ -35,4 +35,8 @@ class LAMA(Module):
     normalize : ``bool``, optional (default: ``True``)
         If true, we normalize the computed similarities with a softmax, to return a probability distribution for
         each attention head. If false, this is just computing a similarity score. Ignored if `output_dim` is not
-  
+        None.
+    """
+
+    def __init__(
+        self,
