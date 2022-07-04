@@ -40,3 +40,6 @@ class LAMA(Module):
 
     def __init__(
         self,
+        num_heads: int,
+        input_dim: int,
+        activ
