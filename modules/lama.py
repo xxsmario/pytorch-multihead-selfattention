@@ -43,4 +43,7 @@ class LAMA(Module):
         num_heads: int,
         input_dim: int,
         activation: Callable = torch.tanh,
-        normalize: bo
+        normalize: bool = True,
+    ) -> None:
+        super().__init__()
+        self._ac
