@@ -46,4 +46,4 @@ class LAMA(Module):
         normalize: bool = True,
     ) -> None:
         super().__init__()
-        self._ac
+        self._activation = (lambda x: x) if activation is None 
