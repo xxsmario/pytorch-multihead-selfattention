@@ -48,4 +48,5 @@ class LAMA(Module):
         super().__init__()
         self._activation = (lambda x: x) if activation is None else activation
         self._normalize = normalize
-        self._p = Parameter(t
+        self._p = Parameter(torch.Tensor(input_dim, num_heads))
+        self._q = Parameter(torch
