@@ -53,3 +53,5 @@ class LAMA(Module):
 
         self.reset_parameters()
 
+    def reset_parameters(self):
+        torch.nn.init.kaimi
