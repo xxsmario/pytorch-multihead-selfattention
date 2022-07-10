@@ -55,4 +55,6 @@ class LAMA(Module):
 
     def reset_parameters(self):
         torch.nn.init.kaiming_uniform_(self._p, a=math.sqrt(5))
-        torch.nn.init.ka
+        torch.nn.init.kaiming_uniform_(self._q, a=math.sqrt(5))
+
+    def forward(self, inpu
