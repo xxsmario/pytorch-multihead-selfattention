@@ -58,4 +58,5 @@ class LAMA(Module):
         torch.nn.init.kaiming_uniform_(self._q, a=math.sqrt(5))
 
     def forward(self, inputs: torch.Tensor, mask: torch.Tensor = None) -> torch.Tensor:
-        sim
+        similarities = self._forward_internal(inputs, mask)
+        if self.
