@@ -61,4 +61,5 @@ class LAMA(Module):
         similarities = self._forward_internal(inputs, mask)
         if self._normalize:
             if mask is not None:
-                #
+                # The 2nd dimension (num_heads) will be broadcasted
+            
