@@ -59,4 +59,6 @@ class LAMA(Module):
 
     def forward(self, inputs: torch.Tensor, mask: torch.Tensor = None) -> torch.Tensor:
         similarities = self._forward_internal(inputs, mask)
-        if self.
+        if self._normalize:
+            if mask is not None:
+                #
