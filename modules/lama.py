@@ -62,4 +62,6 @@ class LAMA(Module):
         if self._normalize:
             if mask is not None:
                 # The 2nd dimension (num_heads) will be broadcasted
-                similarities = similarities.masked_fill(mask.unsqueeze(1)
+                similarities = similarities.masked_fill(mask.unsqueeze(1) == 0, -1e9)
+            return F.softmax(similarities, dim=-1)
+     
