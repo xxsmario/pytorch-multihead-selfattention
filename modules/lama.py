@@ -64,4 +64,7 @@ class LAMA(Module):
                 # The 2nd dimension (num_heads) will be broadcasted
                 similarities = similarities.masked_fill(mask.unsqueeze(1) == 0, -1e9)
             return F.softmax(similarities, dim=-1)
-     
+        else:
+            return similarities
+
+    def _forward_internal(
