@@ -67,4 +67,5 @@ class LAMA(Module):
         else:
             return similarities
 
-    def _forward_internal(self, inputs: torch.Tensor, mask: torch.Tensor) -> torch.Te
+    def _forward_internal(self, inputs: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
+        # The global context vector for each input is
