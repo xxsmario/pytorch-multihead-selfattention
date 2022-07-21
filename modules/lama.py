@@ -68,4 +68,5 @@ class LAMA(Module):
             return similarities
 
     def _forward_internal(self, inputs: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
-        # The global context vector for each input is
+        # The global context vector for each input is the mean of the word embeddings.
+        # This is re
