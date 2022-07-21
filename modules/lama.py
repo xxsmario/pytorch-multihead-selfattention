@@ -69,4 +69,6 @@ class LAMA(Module):
 
     def _forward_internal(self, inputs: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
         # The global context vector for each input is the mean of the word embeddings.
-        # This is re
+        # This is referred to as LAMA + ctx in the paper.
+        if mask is not None:
+          
