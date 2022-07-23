@@ -71,4 +71,5 @@ class LAMA(Module):
         # The global context vector for each input is the mean of the word embeddings.
         # This is referred to as LAMA + ctx in the paper.
         if mask is not None:
-          
+            c = (torch.sum(inputs * mask.unsqueeze(-1), dim=1) /
+       
