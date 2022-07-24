@@ -76,4 +76,5 @@ class LAMA(Module):
         else:
             c = torch.mean(inputs, dim=1)
 
-        # See Eq. 3.13 of ht
+        # See Eq. 3.13 of https://arxiv.org/abs/1912.00835
+        p_c_g = self._p.t() @ c.unsque
