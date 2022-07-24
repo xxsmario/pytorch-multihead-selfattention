@@ -73,4 +73,7 @@ class LAMA(Module):
         if mask is not None:
             c = (torch.sum(inputs * mask.unsqueeze(-1), dim=1) /
                  torch.clamp(torch.sum(mask, dim=1, keepdims=True), min=1e-9))
-        else
+        else:
+            c = torch.mean(inputs, dim=1)
+
+        # See Eq. 3.13 of ht
