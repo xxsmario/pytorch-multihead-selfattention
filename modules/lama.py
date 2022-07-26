@@ -80,4 +80,5 @@ class LAMA(Module):
         p_c_g = self._p.t() @ c.unsqueeze(-1)
         q_h = self._q.t() @ inputs.transpose(1, 2)
 
-    
+        alignment = self._activation(p_c_g * q_h)
+        alignment 
