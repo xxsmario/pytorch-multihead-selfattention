@@ -77,4 +77,7 @@ class LAMA(Module):
             c = torch.mean(inputs, dim=1)
 
         # See Eq. 3.13 of https://arxiv.org/abs/1912.00835
-        p_c_g = self._p.t() @ c.unsque
+        p_c_g = self._p.t() @ c.unsqueeze(-1)
+        q_h = self._q.t() @ inputs.transpose(1, 2)
+
+    
