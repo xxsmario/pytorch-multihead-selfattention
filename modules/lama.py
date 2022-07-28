@@ -81,4 +81,6 @@ class LAMA(Module):
         q_h = self._q.t() @ inputs.transpose(1, 2)
 
         alignment = self._activation(p_c_g * q_h)
-        alignment 
+        alignment /= torch.norm(alignment, dim=1, keepdim=True)  # l2 normalization
+
+        # (
