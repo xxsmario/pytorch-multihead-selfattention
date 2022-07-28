@@ -83,4 +83,5 @@ class LAMA(Module):
         alignment = self._activation(p_c_g * q_h)
         alignment /= torch.norm(alignment, dim=1, keepdim=True)  # l2 normalization
 
-        # (
+        # (batch_size, num_heads, max_seq_len)
+        return alignment
