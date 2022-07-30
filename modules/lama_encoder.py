@@ -7,4 +7,6 @@ from torch.nn import Module
 from .lama import LAMA
 
 
-class LAMAEncoder(Modul
+class LAMAEncoder(Module):
+    """
+    This class implements the encoder proposed in `"Low Ran
