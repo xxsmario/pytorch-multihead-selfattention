@@ -9,4 +9,5 @@ from .lama import LAMA
 
 class LAMAEncoder(Module):
     """
-    This class implements the encoder proposed in `"Low Ran
+    This class implements the encoder proposed in `"Low Rank Factorization for Compact Multi-Head Self-Attention"
+    <https:
