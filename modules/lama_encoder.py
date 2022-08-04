@@ -15,4 +15,5 @@ class LAMAEncoder(Module):
 
     Inputs:
 
-    - inputs: 
+    - inputs: shape ``(batch_size, max_sequence_length, input_dim)``
+  
