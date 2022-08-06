@@ -22,4 +22,4 @@ class LAMAEncoder(Module):
     Output:
 
     If ``output_dim`` is not None:
-  
+        - structured sentence embedding: shape ``(batch_size, num_h
