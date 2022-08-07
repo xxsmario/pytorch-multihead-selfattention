@@ -29,4 +29,5 @@ class LAMAEncoder(Module):
 
     Parameters
     ----------
-    
+    num_heads : ``int``, required.
+        The number of attention heads to u
