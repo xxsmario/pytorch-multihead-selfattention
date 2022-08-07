@@ -24,4 +24,9 @@ class LAMAEncoder(Module):
     If ``output_dim`` is not None:
         - structured sentence embedding: shape ``(batch_size, num_heads, input_dim)``.
     Else:
-        - document embedding: shap
+        - document embedding: shape ``(batch_size, output_dim)``.
+
+
+    Parameters
+    ----------
+    
