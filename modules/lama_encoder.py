@@ -32,4 +32,5 @@ class LAMAEncoder(Module):
     num_heads : ``int``, required.
         The number of attention heads to use.
     input_dim : ``int``, required.
-        The size of the
+        The size of the last dimension of the input tensor.
+    activation : ``Callable``,
