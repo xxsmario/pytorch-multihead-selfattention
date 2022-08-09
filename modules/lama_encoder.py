@@ -34,4 +34,5 @@ class LAMAEncoder(Module):
     input_dim : ``int``, required.
         The size of the last dimension of the input tensor.
     activation : ``Callable``, optional (default=``torch.tanh``)
-        An activation function 
+        An activation function applied after the attention calculation. Default is
+        ``to
