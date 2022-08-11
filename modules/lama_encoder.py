@@ -37,4 +37,4 @@ class LAMAEncoder(Module):
         An activation function applied after the attention calculation. Default is
         ``torch.tanh``. Set to ``None`` to use linear activation (i.e. no activation).
     output_dim : ``Optional[int]``, optional (default=``None``)
-        If not None, we'll apply the comput
+        If not None, we'll apply the computed attention weights for each head to ``inputs``, concatenate the
