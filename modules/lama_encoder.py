@@ -38,3 +38,4 @@ class LAMAEncoder(Module):
         ``torch.tanh``. Set to ``None`` to use linear activation (i.e. no activation).
     output_dim : ``Optional[int]``, optional (default=``None``)
         If not None, we'll apply the computed attention weights for each head to ``inputs``, concatenate the
+        resulting features, and project them into a vector of this size,
