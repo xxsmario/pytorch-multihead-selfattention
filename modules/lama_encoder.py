@@ -39,4 +39,5 @@ class LAMAEncoder(Module):
     output_dim : ``Optional[int]``, optional (default=``None``)
         If not None, we'll apply the computed attention weights for each head to ``inputs``, concatenate the
         resulting features, and project them into a vector of this size, giving an output of
-        ``(batch_size, output_dim)``. If this value is ``None``, we will just return the attention
+        ``(batch_size, output_dim)``. If this value is ``None``, we will just return the attention weights over
+        each timestep in ``input``for each head, given
