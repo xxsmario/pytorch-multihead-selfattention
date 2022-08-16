@@ -43,3 +43,7 @@ class LAMAEncoder(Module):
         each timestep in ``input``for each head, given an output of shape ``(batch_size, num_heads, max_seq_len)``.
     """
 
+    def __init__(
+        self,
+        num_heads: int,
+        input_dim: 
