@@ -48,4 +48,7 @@ class LAMAEncoder(Module):
         num_heads: int,
         input_dim: int,
         activation: Callable = torch.tanh,
-        output_dim: int = 
+        output_dim: int = None
+    ) -> None:
+        super().__init__()
+        self._att
