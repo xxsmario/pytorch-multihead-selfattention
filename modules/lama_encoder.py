@@ -46,4 +46,6 @@ class LAMAEncoder(Module):
     def __init__(
         self,
         num_heads: int,
-        input_dim: 
+        input_dim: int,
+        activation: Callable = torch.tanh,
+        output_dim: int = 
