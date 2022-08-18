@@ -51,4 +51,7 @@ class LAMAEncoder(Module):
         output_dim: int = None
     ) -> None:
         super().__init__()
-        self._attention = LAMA(num_heads, input_dim, activation, nor
+        self._attention = LAMA(num_heads, input_dim, activation, normalize=True)
+        self._output_dim = output_dim
+
+        if s
