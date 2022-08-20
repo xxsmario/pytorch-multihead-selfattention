@@ -54,4 +54,5 @@ class LAMAEncoder(Module):
         self._attention = LAMA(num_heads, input_dim, activation, normalize=True)
         self._output_dim = output_dim
 
-        if s
+        if self._output_dim:
+            self.projection_layer = Linear(
