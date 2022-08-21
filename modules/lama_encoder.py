@@ -57,4 +57,6 @@ class LAMAEncoder(Module):
         if self._output_dim:
             self.projection_layer = Linear(num_heads * input_dim, self._output_dim)
         else:
-            self.pro
+            self.projection_layer = None
+
+    def forward(self, inputs: torch.Tensor, ma
