@@ -55,4 +55,6 @@ class LAMAEncoder(Module):
         self._output_dim = output_dim
 
         if self._output_dim:
-            self.projection_layer = Linear(
+            self.projection_layer = Linear(num_heads * input_dim, self._output_dim)
+        else:
+            self.pro
