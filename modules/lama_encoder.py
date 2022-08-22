@@ -59,4 +59,5 @@ class LAMAEncoder(Module):
         else:
             self.projection_layer = None
 
-    def forward(self, inputs: torch.Tensor, ma
+    def forward(self, inputs: torch.Tensor, mask: torch.Tensor = None) -> torch.Tensor:
+        self_attention_matr
