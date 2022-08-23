@@ -60,4 +60,5 @@ class LAMAEncoder(Module):
             self.projection_layer = None
 
     def forward(self, inputs: torch.Tensor, mask: torch.Tensor = None) -> torch.Tensor:
-        self_attention_matr
+        self_attention_matrix = self._attention(inputs, mask)
+        structured_senten
