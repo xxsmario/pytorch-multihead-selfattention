@@ -61,4 +61,6 @@ class LAMAEncoder(Module):
 
     def forward(self, inputs: torch.Tensor, mask: torch.Tensor = None) -> torch.Tensor:
         self_attention_matrix = self._attention(inputs, mask)
-        structured_senten
+        structured_sentence_embedding = self_attention_matrix @ inputs
+
+        if 
