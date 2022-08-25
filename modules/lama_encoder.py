@@ -64,4 +64,5 @@ class LAMAEncoder(Module):
         structured_sentence_embedding = self_attention_matrix @ inputs
 
         if self._output_dim:
-            return self.projection_layer(stru
+            return self.projection_layer(structured_sentence_embedding.view(inputs.size(0), -1))
+        el
