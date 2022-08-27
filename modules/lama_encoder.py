@@ -65,4 +65,5 @@ class LAMAEncoder(Module):
 
         if self._output_dim:
             return self.projection_layer(structured_sentence_embedding.view(inputs.size(0), -1))
-        el
+        else:
+            return structured_sentence_embedding
