@@ -6,4 +6,5 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="lama",
     version="0.1.0",
-    author="John G
+    author="John Giorgi",
+    author_email="johnmgiorgi@gmail.
