@@ -9,4 +9,4 @@ setuptools.setup(
     author="John Giorgi",
     author_email="johnmgiorgi@gmail.com",
     description=("A PyTorch implementation of the Compact Multi-Head Self-Attention Mechanism from"
-                 " the paper
+                 " the paper: 'Low Rank Factorization for Compact Multi-Head Self-Attention'"
