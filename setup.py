@@ -11,4 +11,5 @@ setuptools.setup(
     description=("A PyTorch implementation of the Compact Multi-Head Self-Attention Mechanism from"
                  " the paper: 'Low Rank Factorization for Compact Multi-Head Self-Attention'"),
     long_description=long_description,
-    long_d
+    long_description_content_type="text/markdown",
+    url="https://github.c
