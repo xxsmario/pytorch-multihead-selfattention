@@ -12,4 +12,5 @@ setuptools.setup(
                  " the paper: 'Low Rank Factorization for Compact Multi-Head Self-Attention'"),
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.c
+    url="https://github.com/JohnGiorgi/compact-multi-head-self-attention-pytorch",
+    packages=setu
