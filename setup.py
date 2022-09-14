@@ -14,4 +14,6 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/JohnGiorgi/compact-multi-head-self-attention-pytorch",
     packages=setuptools.find_packages(),
-    keywords=["natural language processing", "pyt
+    keywords=["natural language processing", "pytorch", "self-attention", "multi-head attention"],
+    classifiers=[
+ 
