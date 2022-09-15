@@ -16,4 +16,5 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     keywords=["natural language processing", "pytorch", "self-attention", "multi-head attention"],
     classifiers=[
- 
+        "Development Status :: 1 - Planning",
+        "Environment ::
