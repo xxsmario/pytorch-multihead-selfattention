@@ -18,4 +18,6 @@ setuptools.setup(
     classifiers=[
         "Development Status :: 1 - Planning",
         "Environment :: Console",
-        "Intended Audience :: Science/Research
+        "Intended Audience :: Science/Research",
+        "License :: OSI Approved :: Apache Software License",
+     
