@@ -20,4 +20,5 @@ setuptools.setup(
         "Environment :: Console",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: Apache Software License",
-     
+        "Operating System :: OS Independent",
+        "Programming La
