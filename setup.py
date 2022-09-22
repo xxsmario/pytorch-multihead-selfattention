@@ -25,4 +25,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
-        "Typing :: Typ
+        "Typing :: Typed"
+    ],
+    python_requires='>=3.7',
+    install_r
