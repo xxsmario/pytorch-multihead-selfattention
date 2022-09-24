@@ -28,4 +28,8 @@ setuptools.setup(
         "Typing :: Typed"
     ],
     python_requires='>=3.7',
-    install_r
+    install_requires=[
+        'torch>=1.2.0',
+    ],
+    extras_require={
+        'dev': [
