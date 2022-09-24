@@ -33,3 +33,6 @@ setuptools.setup(
     ],
     extras_require={
         'dev': [
+            'tox',
+            'pytest',
+            'pytest-
