@@ -35,4 +35,7 @@ setuptools.setup(
         'dev': [
             'tox',
             'pytest',
-            'pytest-
+            'pytest-cov'
+        ]
+    }
+)
