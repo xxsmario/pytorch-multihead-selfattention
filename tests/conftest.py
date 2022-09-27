@@ -7,4 +7,5 @@ from modules.lama_encoder import LAMAEncoder
 
 @pytest.fixture
 def lama():
-    """Return a tuple of the a
+    """Return a tuple of the args used to intialize ``LAMA`` and the initialized instance.
+  
