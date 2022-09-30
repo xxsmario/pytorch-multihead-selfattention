@@ -13,4 +13,6 @@ def lama():
     def _initialize(num_heads=6, input_dim=128, activation=torch.tanh, normalize=True, bias=False):
 
         args = {
-         
+            'num_heads':  num_heads,
+            'input_dim':  input_dim,
+      
