@@ -15,4 +15,6 @@ def lama():
         args = {
             'num_heads':  num_heads,
             'input_dim':  input_dim,
-      
+            'activation': activation,
+            'normalize':  normalize,
+ 
