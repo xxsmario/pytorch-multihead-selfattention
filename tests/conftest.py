@@ -17,4 +17,10 @@ def lama():
             'input_dim':  input_dim,
             'activation': activation,
             'normalize':  normalize,
- 
+        }
+
+        lama = LAMA(**args)
+
+        return args, lama
+
+    retu
