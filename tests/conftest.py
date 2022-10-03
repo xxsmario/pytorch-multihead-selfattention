@@ -23,4 +23,9 @@ def lama():
 
         return args, lama
 
-    retu
+    return _initialize
+
+
+@pytest.fixture
+def lama_encoder():
+    """Retu
