@@ -28,4 +28,4 @@ def lama():
 
 @pytest.fixture
 def lama_encoder():
-    """Retu
+    """Return a tuple of the args used to intialize ``LAMA`` and the 
