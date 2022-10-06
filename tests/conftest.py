@@ -30,4 +30,5 @@ def lama():
 def lama_encoder():
     """Return a tuple of the args used to intialize ``LAMA`` and the initialized instance.
     """
-    # This nested function lets us build t
+    # This nested function lets us build the object on the fly in our unit tests
+    def _initialize(num_
