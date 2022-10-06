@@ -28,4 +28,6 @@ def lama():
 
 @pytest.fixture
 def lama_encoder():
-    """Return a tuple of the args used to intialize ``LAMA`` and the 
+    """Return a tuple of the args used to intialize ``LAMA`` and the initialized instance.
+    """
+    # This nested function lets us build t
