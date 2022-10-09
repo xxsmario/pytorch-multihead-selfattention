@@ -33,4 +33,6 @@ def lama_encoder():
     # This nested function lets us build the object on the fly in our unit tests
     def _initialize(num_heads=6, input_dim=128, activation=torch.tanh, output_dim=64):
 
-       
+        args = {
+            'num_heads':  num_heads,
+            'input_dim'
