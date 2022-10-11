@@ -37,4 +37,7 @@ def lama_encoder():
             'num_heads':  num_heads,
             'input_dim':  input_dim,
             'activation': activation,
-            'output_
+            'output_dim': output_dim
+        }
+
+        lama_encoder = LAMAEn
