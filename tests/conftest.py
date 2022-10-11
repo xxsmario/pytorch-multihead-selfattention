@@ -35,4 +35,6 @@ def lama_encoder():
 
         args = {
             'num_heads':  num_heads,
-            'input_dim'
+            'input_dim':  input_dim,
+            'activation': activation,
+            'output_
