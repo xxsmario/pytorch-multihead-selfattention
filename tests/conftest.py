@@ -40,4 +40,8 @@ def lama_encoder():
             'output_dim': output_dim
         }
 
-        lama_encoder = LAMAEn
+        lama_encoder = LAMAEncoder(**args)
+
+        return args, lama_encoder
+
+    retu
