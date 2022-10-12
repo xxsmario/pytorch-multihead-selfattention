@@ -44,4 +44,4 @@ def lama_encoder():
 
         return args, lama_encoder
 
-    retu
+    return _initialize
