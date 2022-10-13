@@ -2,4 +2,6 @@ import torch
 
 
 class TestLAMA(object):
-    """Collect
+    """Collects all unit tests for `modules.lama.LAMA`.
+    """
+    def 
