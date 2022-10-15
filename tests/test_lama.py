@@ -7,4 +7,6 @@ class TestLAMA(object):
     def test_attributes_after_initialization(self, lama):
         args, lama = lama()
 
-        assert lama._activation == args['activati
+        assert lama._activation == args['activation']
+        assert lama._normalize == args['normalize']
+       
