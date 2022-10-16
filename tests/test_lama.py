@@ -9,4 +9,5 @@ class TestLAMA(object):
 
         assert lama._activation == args['activation']
         assert lama._normalize == args['normalize']
-       
+        assert lama._p.size() == (args['input_dim'], args['num_heads'])
+   
