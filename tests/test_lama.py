@@ -12,4 +12,7 @@ class TestLAMA(object):
         assert lama._p.size() == (args['input_dim'], args['num_heads'])
         assert lama._q.size() == (args['input_dim'], args['num_heads'])
 
-    def test_output_shape_forward_without_mask_without_normalization
+    def test_output_shape_forward_without_mask_without_normalization(self, lama):
+        args, lama = lama(normalize=False)
+
+      
