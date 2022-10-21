@@ -15,4 +15,5 @@ class TestLAMA(object):
     def test_output_shape_forward_without_mask_without_normalization(self, lama):
         args, lama = lama(normalize=False)
 
-      
+        # Keep these small so testing is fast
+        batch_size 
