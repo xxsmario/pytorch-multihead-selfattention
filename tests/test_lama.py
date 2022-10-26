@@ -25,4 +25,6 @@ class TestLAMA(object):
         assert output.size() == (batch_size, args['num_heads'], max_seq_len)
 
     def test_output_shape_forward_without_mask_with_normalization(self, lama):
-      
+        args, lama = lama(normalize=True)
+
+        # Keep these small s
