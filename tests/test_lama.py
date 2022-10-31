@@ -34,4 +34,6 @@ class TestLAMA(object):
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
         output = lama(inputs)
 
-        assert output.size() == (batch_size, a
+        assert output.size() == (batch_size, args['num_heads'], max_seq_len)
+
+    def test_output_
