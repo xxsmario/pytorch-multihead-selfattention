@@ -46,4 +46,6 @@ class TestLAMA(object):
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
         mask = torch.ones(batch_size, max_seq_len)
         mask[:, -1] = 0  # Zero-out the last timestep of each sequence
-        output = lama(in
+        output = lama(inputs, mask)
+
+        assert output.size() == (batch_size, args
