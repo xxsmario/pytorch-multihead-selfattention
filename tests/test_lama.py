@@ -62,4 +62,6 @@ class TestLAMA(object):
         mask[:, -1] = 0  # Zero-out the last timestep of each sequence
         output = lama(inputs, mask)
 
-        assert output.size() 
+        assert output.size() == (batch_size, args['num_heads'], max_seq_len)
+
+    def test_output_is_masked_
