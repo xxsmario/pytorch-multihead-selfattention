@@ -64,4 +64,5 @@ class TestLAMA(object):
 
         assert output.size() == (batch_size, args['num_heads'], max_seq_len)
 
-    def test_output_is_masked_
+    def test_output_is_masked_forward(self, lama):
+        args, lama = lama(normalize=True)
