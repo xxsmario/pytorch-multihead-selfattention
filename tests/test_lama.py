@@ -66,3 +66,6 @@ class TestLAMA(object):
 
     def test_output_is_masked_forward(self, lama):
         args, lama = lama(normalize=True)
+
+        # Keep these small so testing is fast
+        batch_size =
