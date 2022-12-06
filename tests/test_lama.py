@@ -72,4 +72,5 @@ class TestLAMA(object):
         max_seq_len = 25  # Maximum length of the input sequence
 
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
-        mask = torch.o
+        mask = torch.ones(batch_size, max_seq_len)
+        mask[:, -1] = 0  # Zero-out the la
