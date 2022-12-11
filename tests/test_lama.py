@@ -74,4 +74,7 @@ class TestLAMA(object):
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
         mask = torch.ones(batch_size, max_seq_len)
         mask[:, -1] = 0  # Zero-out the last timestep of each sequence
-        output = lama(inputs, 
+        output = lama(inputs, mask)
+
+        # Make sure the probability is 0 at masked positions
+ 
