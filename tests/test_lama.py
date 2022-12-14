@@ -77,4 +77,6 @@ class TestLAMA(object):
         output = lama(inputs, mask)
 
         # Make sure the probability is 0 at masked positions
-        assert torch.allclose(output[:, :, -1], torch.zeros_like(output[:, :, -1
+        assert torch.allclose(output[:, :, -1], torch.zeros_like(output[:, :, -1]))
+
+    def test_output_shape_forward_internal_without_mask(self, lam
