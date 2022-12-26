@@ -86,4 +86,6 @@ class TestLAMA(object):
         batch_size = 4
         max_seq_len = 25  # Maximum length of the input sequence
 
-        inputs = torch.randn(b
+        inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
+        mask = None
+        o
