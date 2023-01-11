@@ -88,4 +88,6 @@ class TestLAMA(object):
 
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
         mask = None
-        o
+        output = lama._forward_internal(inputs, mask)
+
+        assert output
