@@ -90,4 +90,6 @@ class TestLAMA(object):
         mask = None
         output = lama._forward_internal(inputs, mask)
 
-        assert output
+        assert output.size() == (batch_size, args['num_heads'], max_seq_len)
+
+    def test_out
