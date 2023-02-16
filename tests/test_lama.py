@@ -93,4 +93,6 @@ class TestLAMA(object):
         assert output.size() == (batch_size, args['num_heads'], max_seq_len)
 
     def test_output_shape_forward_internal_with_mask(self, lama):
-        ar
+        args, lama = lama()
+
+        # Keep these small so testin
