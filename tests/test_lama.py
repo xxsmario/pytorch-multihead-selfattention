@@ -95,4 +95,6 @@ class TestLAMA(object):
     def test_output_shape_forward_internal_with_mask(self, lama):
         args, lama = lama()
 
-        # Keep these small so testin
+        # Keep these small so testing is fast
+        batch_size = 4
+        max_seq_len = 25  # Maxim
