@@ -106,4 +106,5 @@ class TestLAMA(object):
 
         assert output.size() == (batch_size, args['num_heads'], max_seq_len)
 
-    def 
+    def test_output_sums_to_one_forward_without_mask(self, lama):
+     
