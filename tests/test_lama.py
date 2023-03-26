@@ -109,4 +109,6 @@ class TestLAMA(object):
     def test_output_sums_to_one_forward_without_mask(self, lama):
         args, lama = lama(normalize=True)
 
-        # Keep th
+        # Keep these small so testing is fast
+        batch_size = 4
+        ma
