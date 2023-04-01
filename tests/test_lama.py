@@ -117,4 +117,6 @@ class TestLAMA(object):
         output = lama(inputs)
 
         # Attention weights should sum to 1
-        assert torch.allclose(torch.sum(output, dim=-1), tor
+        assert torch.allclose(torch.sum(output, dim=-1), torch.ones(batch_size, args['num_heads']))
+
+    def test_output_sums_to_one
