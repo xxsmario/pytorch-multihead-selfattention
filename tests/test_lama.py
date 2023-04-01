@@ -116,4 +116,5 @@ class TestLAMA(object):
         inputs = torch.randn(batch_size, max_seq_len, args['input_dim'])
         output = lama(inputs)
 
-        # Attention weights should sum to
+        # Attention weights should sum to 1
+        assert torch.allclose(torch.sum(output, dim=-1), tor
