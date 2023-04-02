@@ -120,4 +120,6 @@ class TestLAMA(object):
         assert torch.allclose(torch.sum(output, dim=-1), torch.ones(batch_size, args['num_heads']))
 
     def test_output_sums_to_one_forward_with_mask(self, lama):
-        args, lama = lama(normali
+        args, lama = lama(normalize=True)
+
+        # Keep these small so testing is fast
