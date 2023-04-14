@@ -124,4 +124,6 @@ class TestLAMA(object):
 
         # Keep these small so testing is fast
         batch_size = 4
-        max_seq_len = 25  # Max
+        max_seq_len = 25  # Maximum length of the input sequence
+
+        inputs = torch.randn(batch_size,
