@@ -131,4 +131,5 @@ class TestLAMA(object):
         mask[:, -1] = 0  # Zero-out the last timestep of each sequence
         output = lama(inputs, mask)
 
-      
+        # Attention weights should sum to 1
+        assert torch.allclose(torch.sum(out
