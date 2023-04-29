@@ -63,3 +63,5 @@ class TestLAMAEncoder(object):
         mask = torch.ones(batch_size, max_seq_len)
         mask[:, -1] = 0  # Zero-out the last timestep of each sequence
         output = lama_encoder(inputs, mask)
+
+        assert output.size() == (batch_size, args['output_dim'])
